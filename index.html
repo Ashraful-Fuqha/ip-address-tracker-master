@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="./src/dist/output.css">
+    <script src="./src/js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+  <main class="w-full">
+    <div class="font-rubik text-center w-full px-3 absolute z-10 mt-6" id="tracker" >
+      <h1 class="text-2xl text-white font-medium mb-4">IP Address Tracker</h1>
+      <form action="/" method="get">
+        <fieldset class="flex justify-center rounded-md overflow-hidden h-12 mb-6 md:w-[700px] md:mx-auto md:mb-9 md:mt-8">
+          <input id="ip" name="ip" type="text" placeholder="Enter a IP Address" class="text-center w-full">
+          <input type="submit" value="" class="bg-black bg-arrow_img w-10 bg-no-repeat bg-center" >
+        </fieldset>
+      </form>
+      <section class="bg-white rounded-xl p-5 md:flex md:max-w-[1030px] md:mx-auto md:text-left md:py-6 md:gap-8">
+        <article class="mb-3 border-r-2 px-5">
+          <h1 class="text-[12px] font-medium tracking-widest text-Dark_Gray">IP ADDRESS</h1>
+          <p data-ip class="text-black font-medium  md:text-[1.4rem]">192.121.174.101</p>
+        </article>
+        <article class="mb-3 border-r-2 md:pe-16">
+          <h1 class="text-[12px] font-medium tracking-widest text-Dark_Gray">LOCATION</h1>
+          <p data-location class="text-black font-medium md:text-[1.4rem]">Brooklyn, NY 10001</p>
+        </article>
+        <article class="mb-3  border-r-2 md:pe-24">
+          <h1 class="text-[12px] font-medium tracking-widest text-Dark_Gray">TIMEZONE</h1>
+          <p class="text-black font-medium md:text-[1.4rem]">UTC<span data-timezone>-05:00</span></p>
+        </article>
+        <article class="md:pe-16">
+          <h1 class="text-[12px] font-medium tracking-widest text-Dark_Gray">ISP</h1>
+          <p data-isp class="text-black font-medium md:text-[1.4rem]">SpaceX Starlink</p>
+        </article>
+      </section>
+    </div>  
+    <img src="./images/pattern-bg-desktop.png" alt="" class="md:block hidden">
+    <img src="./images/pattern-bg-mobile.png" alt="" class="md:hidden">
+    <div id="map" class="min-w-screen min-h-screen -z-0 relative">
+    </div>
+  </main>
+</body>
+</html>
