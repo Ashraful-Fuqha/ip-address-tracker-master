@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here]()
-- Live Site URL: [Live site URL here]()
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/ipaddresstrackermaster-built-with-the-vanillajs-and-tailwindcss-C2g5gH7bmC)
+- Live Site URL: [Live site URL here](https://ashraful-fuqha.github.io/ip-address-tracker-master/)
 
 ## My process
 
